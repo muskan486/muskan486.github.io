@@ -425,7 +425,7 @@ button:focus {
   .timeline-box:nth-child(2n)::after{
     content:'';
     position:absolute;
-    left:-7.5%;
+    left:-8%;
     z-index: 1;
     top:20%;
     border-radius:50%;
