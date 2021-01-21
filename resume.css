@@ -378,12 +378,12 @@ button:focus {
     background-color:rgb(212, 209, 209);
 
   }
-  .timeline-box::before{
+  .timeline-box:nth-child(2n+1)::before{
     content:'';
     position:absolute;
     background-image: url("images/books.png");
     display:inline-block;
-    left:-15%;
+    left:-13%;
     top:10%;
     height:30px;
     width:30px;
@@ -425,7 +425,7 @@ button:focus {
   .timeline-box:nth-child(2n)::after{
     content:'';
     position:absolute;
-    left:-7%;
+    left:-7.5%;
     z-index: 1;
     top:20%;
     border-radius:50%;
