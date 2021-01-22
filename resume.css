@@ -3,6 +3,9 @@ body{
   font-family: sans-serif;
   font-size: 30px;
 }
+body::-webkit-scrollbar{
+  display:none;
+}
 /*body header*/
 #body-header{
   background-image:url("images/macbook_mouse.jpg");
@@ -12,15 +15,58 @@ body{
   opacity: 0.8;
   background-attachment: fixed;
 }
-.name{
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing:0.1rem;
-  font-family: sans-serif;
-  margin-bottom:0.5rem;
-  margin-top:15vh;
+.bars{
   color:white;
-  text-align:center;
+  margin:0;
+  margin-right:5%;
+  display:none;
+}
+.bars i{
+  font-size:2rem;
+}
+.dropdown-list{
+  margin:0;
+  display:none;
+  background-color: #828470;
+  box-shadow: 0px 4px 8px 1px #535547;
+}
+.dropdown-list ul{
+  margin:0.2rem 0.2rem;
+  text-align:left;
+  padding:0px 0.8rem;
+}
+.dropdown-menu:hover .dropdown-list{
+  display:block;
+  position:absolute;
+  right:3%;
+}
+.dropdown-list li{
+  margin:0.4rem 0px;
+}
+.no-list-style{
+  list-style:none;
+}
+
+.no-list-style li {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.no-list-style li a{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+#name-social-container {
+  margin-top: 20vh;
+}
+
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 section{
   display: flex;
@@ -450,4 +496,44 @@ button:focus {
     color:grey;
     font-size:13px;
     font-weight: 600;
+  }
+  @media only screen and (max-width:572px)
+  {
+    .timeline-box{
+      width:100%;
+      left:10% !important;
+    }
+    .bars{
+      display:block;
+    }
+    .nav-menu{
+      display:none;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .timeline-box{
+      width:90%;
+      left:10% !important;
+    }
+    .timeline-box::after{
+      left:-9.3% !important;
+    }
+    .timeline-divider{
+      top:10%;
+      left:2%;
+    }
+    .contact-form{
+      margin-left:0%;
+    }
+    .contact-display{
+      flex-wrap:wrap;
+    }
+    #my-details-container{
+      width:80%;
+      margin:10%;
+    }
+    #input-form{
+      width:80%;
+      margin:10%;
+    }
   }
