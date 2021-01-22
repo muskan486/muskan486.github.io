@@ -21,6 +21,10 @@ body::-webkit-scrollbar{
   margin-right:5%;
   display:none;
 }
+.dropdown-menu{
+  margin-left:90%;
+  margin-right:5%;
+}
 .bars i{
   font-size:2rem;
 }
@@ -58,7 +62,7 @@ body::-webkit-scrollbar{
   text-decoration: none;
 }
 #name-social-container {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 #my-name {
@@ -176,7 +180,7 @@ transition: color 0.5s border-bottom 0.5s;
 .skills-name span{
   color: white;
 font-size:1.2rem;
-padding-left: 12px;
+padding: 12px;
 vertical-align: middle;
 }
 .skill-progress>div{
@@ -499,29 +503,51 @@ button:focus {
   }
   @media only screen and (max-width:572px)
   {
-    .timeline-box{
-      width:100%;
-      left:10% !important;
-    }
     .bars{
       display:block;
     }
+    .timeline-box {
+      width: 100%;
+      left: 10% !important;
+  }
+
     .nav-menu{
       display:none;
     }
+    #body-header{
+      height: 45vh;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8;
+      background-attachment: fixed;
+    }
+    #name-social-container {
+      margin-top: 10vh;
+    }
+
   }
   @media only screen and (max-width: 768px){
     .timeline-box{
       width:90%;
       left:10% !important;
     }
-    .timeline-box::after{
-      left:-9.3% !important;
+    .timeline-box:nth-child(2n){
+      text-align: right !important;
     }
     .timeline-divider{
-      top:10%;
-      left:2%;
+      top:2% !important;
+      height:85% !important;
+     margin-left:2%;
     }
+    .timeline-box:nth-child(2n+1)::before{
+     
+     left:100%;
+   }
+   
+   #certify .timeline-box::before{
+     
+     left:100%;
+  }
     #contact-form{
       margin-left:0%;
     }
@@ -535,5 +561,12 @@ button:focus {
     #input-form{
       width:80%;
       margin:10%;
+    }
+    #body-header{
+      height: 55vh;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8;
+      background-attachment: fixed;
     }
   }
