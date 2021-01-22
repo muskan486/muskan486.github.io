@@ -522,10 +522,10 @@ button:focus {
       top:10%;
       left:2%;
     }
-    .contact-form{
+    #contact-form{
       margin-left:0%;
     }
-    .contact-display{
+    #contact-display{
       flex-wrap:wrap;
     }
     #my-details-container{
