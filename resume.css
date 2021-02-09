@@ -46,6 +46,9 @@ label[for="more"] {
 label[for="more"]:checked ~ input {
 	display: none;
 }
+label[for="more"]:default ~ input{
+  display:none;
+}
 .dropdown-list{
   margin: 0;
   display: none;
@@ -592,7 +595,9 @@ button:focus {
   label[for="more"] {
 		display: block;
 	}
-  
+  .timeline-logo {
+    width: 20px !important;
+  }
 
 
   .nav-menu {
