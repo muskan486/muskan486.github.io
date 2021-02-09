@@ -24,16 +24,24 @@ body::-webkit-scrollbar {
 
 
 /* Horizontal Lists */
-
-.bars{
+/* label i{
   color: white;
   margin: 0;
-  margin-right: 5%;
-  display: none;
-}
-
-.bars i {
   font-size: 2rem;
+  margin-right: 5%;
+}
+label[for="more"] {
+	display: none;
+} */
+label[for="more"] {
+	display: none;
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  margin-right: 5%;
+}
+#more{
+  display:none;
 }
 label[for="more"]:checked ~ input {
 	display: none;
