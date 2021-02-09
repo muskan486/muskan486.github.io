@@ -35,7 +35,9 @@ body::-webkit-scrollbar {
 .bars i {
   font-size: 2rem;
 }
-
+label[for="more"]:checked ~ input {
+	display: none;
+}
 .dropdown-list{
   margin: 0;
   display: none;
@@ -579,9 +581,10 @@ button:focus {
       left: 10% !important;
   }
 
-  .bars {
-      display: block;
-  }
+  label[for="more"] {
+		display: block;
+	}
+  
 
 
   .nav-menu {
