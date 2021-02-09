@@ -595,8 +595,8 @@ button:focus {
   label[for="more"] {
 		display: block;
 	}
-  .timeline-logo {
-    width: 20px !important;
+  .timeline-logo img{
+    width: 18px !important;
   }
 
 
